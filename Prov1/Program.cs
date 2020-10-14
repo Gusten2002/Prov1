@@ -6,8 +6,11 @@ namespace Prov1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
+                book Book = new book();
+
+                Book.PrintInfo();
+
+                Console.ReadLine();
         }
     }
 }
