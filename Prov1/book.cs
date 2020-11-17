@@ -23,7 +23,7 @@ namespace Prov1
 
         private List<string> Title = new List<string>() { "The Lost World", "The Missing Mask", "The Sanctuary Of The Exiled", "Year of Death", "The Day before Yesterday" };
 
-        public void Book()
+        public book()
         {
             actualValue = generator.Next(100000);
 
@@ -46,13 +46,14 @@ namespace Prov1
             name = Title[whatCategory];
         }
 
+
         public void PrintInfo()
         {
             Console.WriteLine("This book is called ''" + name + "''.");
             Console.WriteLine(name + "'s rarity is: " + rarity + "/10");
             Console.WriteLine(name + " is categorised as: " + category + ".");
-            Console.WriteLine(name + " is worth " + actualValue + "");
-            Console.WriteLine("The actualprice is: " + Evaluate() + ".");
+            Console.WriteLine(name + " is worth " + actualValue + "coins");
+            Console.WriteLine("The actualprice is: " + Evaluate() + "coins because of its rarity.");
         }
 
         public int Evaluate()
